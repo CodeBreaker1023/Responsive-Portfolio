@@ -134,20 +134,7 @@ footer {
 }
 .main {
     margin: 20px auto 20px 20px;
-    width: 600px;
-}
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
-    color: gray;
-}
-
-#nav {
-    font-size: 12px;
-}
-
-h1 {
-    font-size 18px;
+    width: 700px;
 }
 
 #bio-image {
@@ -155,11 +142,33 @@ h1 {
     padding: 10px 10px 10px 0px;
 
 }
+footer {
+    text-align: center;
+    background-color: slategrey;
+    color: white;
+    height: 100px;
+    vertical-align: text-bottom;
+    border-top: 5px solid teal;
+    margin: 100px 0px -200px 0px;
+}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+.main {
+    margin: 20px auto 20px 20px;
+    width: 600px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 678px) {
 .main {
     margin: 20px auto 20px 20px;
     width: 500px;
+    font-size: 16px;
 }
+
+#header {
+    height: 160px;
+}
+
 }
