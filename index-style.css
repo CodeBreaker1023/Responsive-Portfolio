@@ -17,12 +17,13 @@ body {
     margin: 
 }
 
-#relative {
+#absoluteHeader {
     width: 200px;
     height: 80px;
-    margin: -80px 0px 0px 200px;
+    margin: -110px 0px 0px -30px;
+    padding: 0px 0px 0px 0px;
     background: teal;
-    position: relative;
+    position: absolute;
     vertical-align: center;
     color: white;
 }
@@ -44,7 +45,7 @@ hr {
 }
 
 #nav {
-    margin: 0px 350px 0px 0px;
+    margin: 0px 200px 0px 0px;
     float: right;
     font-style: Georgia, Times New Roman, Times, serif;
     font-size: 20px;   
@@ -64,9 +65,11 @@ a {
 
 .main {
     background-color: #e5e4d9;
-    margin: 20px 0px 20px 200px;
+    margin: 20px auto 20px 200px;
     width: 960px;
-    padding: 10px 30px 30px 30px;    
+    padding: 10px 30px 30px 30px; 
+    position: relative;  
+    align-content: center; 
 }
 
 .main-bio {
@@ -93,4 +96,70 @@ footer {
     vertical-align: text-bottom;
     border-top: 5px solid teal;
     margin: 0px 0px -80px 0px;
+}
+@media only screen and (max-width: 1400px) {
+.main {
+    margin: 20px auto 20px 100px;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+.main {
+    margin: 20px auto 20px 50px;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+.main {
+    width: 850px;
+}
+}
+
+@media only screen and (max-width: 1070px) {
+.main {
+    width: 750px;
+}
+}
+
+@media only screen and (max-width: 966px) {
+.main {
+    margin: 20px auto 20px 20px;
+    width: 700px;
+}
+}
+
+@media only screen and (max-width: 820px) {
+#header{
+    width: 100%;
+}
+.main {
+    margin: 20px auto 20px 20px;
+    width: 600px;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+
+#nav {
+    font-size: 12px;
+}
+
+h1 {
+    font-size 18px;
+}
+
+#bio-image {
+    width: 100px;
+    padding: 10px 10px 10px 0px;
+
+}
+}
+
+@media only screen and (max-width: 700px) {
+.main {
+    margin: 20px auto 20px 20px;
+    width: 500px;
+}
 }
