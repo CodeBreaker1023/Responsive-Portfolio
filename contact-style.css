@@ -3,26 +3,32 @@ body {
     font-style: Georgia, Times New Roman, Times, serif;
     font-size: 14px;
     margin: 0px;
+    width: 100%;
 }
 
 #header {
     background-color: rgb(235, 247, 245);
     height: 80px;
     margin: 0px;
+    min-width: 100%;
 }
 
-#relative {
+.container {
+    padding: 20px 0px 0px 200px;
+}
+
+#absoluteHeader {
     width: 200px;
     height: 80px;
-    margin: 0px 0px 0px 200px;
+    margin: -100px 0px 0px 0px;
     background: teal;
-    position: relative;
+    position: absolute;
     text-align: center;
     color: white;
 }
 
 h1 {
-    padding: 30px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
     font-size: 24px;
 }
 
@@ -36,7 +42,7 @@ hr {
 }
 
 #nav {
-    margin: 0px 350px 0px 0px;
+    margin: 0px 50px 0px 0px;
     float: right;
     font-style: Georgia, Times New Roman, Times, serif;
     font-size: 20px;   
@@ -56,11 +62,13 @@ a {
 
 .main {
     background-color: #e5e4d9;
-    margin: 20px 0px 20px 200px;
+    margin: 20px 0px 20px 0px;
     width: 960px;
+    height: 700px;
     padding: 10px 30px 0px 30px;
-    
+    position: relative;
 }
+    
 
 .main-bio {
     margin: 20px;
@@ -108,13 +116,20 @@ input[type=submit]:hover {
 }
 
 
-.container {
+.contactDiv {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
-    width: 960px;
+    padding: -20px 20px 20px 20px;
+    width: 90%;
     float: center;
     list-style-type: none;
+    position: absolute;
+    
+}
+
+.contact {
+    padding: 0px 20px 0px 20px;
+    position: absolute; 
 }
 
 footer {
@@ -124,9 +139,49 @@ footer {
     height: 100px;
     vertical-align: text-bottom;
     border-top: 5px solid teal;
-    margin: 0px 0px -80px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
 }
 
 #textbox {
-    height: 400px;
+    height: 200px;
 }
+
+@media only screen and (max-width: 1220px) {
+.container {
+    padding: 20px 0px 0px 100px;
+}
+}
+
+@media only screen and (max-width: 1100px) {
+.container {
+    padding: 20px 0px 0px 75px;
+}
+
+.main {
+    width: 80%;
+}
+}
+
+@media only screen and (max-width: 990px) {
+.container {
+    padding: 20px 0px 0px 50px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+.container {
+    padding: 20px 0px 0px 50px;
+}
+
+.main {    
+margin: 20px -300px 20px 10px;
+width: 80%;
+}
+}
+
+@media only screen and (max-width: 540px) {
+#header {
+    background-color: rgb(235, 247, 245);
+    height: 160px;
